@@ -1,0 +1,10 @@
+x=load("data.csv");
+>> figure(1);
+>> plot(x(:,1),x(:,2),'k');
+>> title('Randomly Generated Data');
+>> 
+>> %Do K-mean clustering
+>> opts = statset('Display','final');
+'statset'에는 Statistics and Machine Learning Toolbox이(가) 필요합니다.
+ 
+>> [idx,C] = kmeans(x,2,'Distance',
